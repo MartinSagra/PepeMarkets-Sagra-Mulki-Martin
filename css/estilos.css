@@ -188,3 +188,36 @@ body{
 	font-size: 1rem;
 }
 }
+@keyframes animacion{
+	0%{
+		top: 0;
+	}
+	50%{
+		top: -20px;
+	}
+	100%{
+		top: 0;
+	}
+}
+@keyframes girando{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.Celu{
+	position: absolute;
+	width: 100px;
+	top: 200px;
+	right: 200px;
+}
+.Celu img{
+	position: absolute;
+	width: 100%;
+	animation-name: animacion, girando;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 4s, 20s;
+}
