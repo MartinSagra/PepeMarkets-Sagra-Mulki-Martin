@@ -12,11 +12,6 @@ body{
 	font-family: Roboto Condens, sans-serif;
 	background-image: url(../assets/fondo.png);
 }	
-#header {
-	background-color: black;
-	color: white;
-
-}
 .contenido{
 	color: white;
 	font-size: 30px;
@@ -30,11 +25,7 @@ body{
 	font-weight: 700;
 	text-align: center;
 }
-.nav li{
-	display: inline-flex;
-	margin: 30px 5px 5px 10px;
-	color: white;
-	}
+
 #footer {
 	background-color: black;
 	color: white;
@@ -89,7 +80,6 @@ body{
 }
 #containerGrid{
 	display: grid;
-	grid-template-rows: 120px auto 120px;
 	min-height: 100vh;
 }
 .containerFlex{
@@ -112,11 +102,7 @@ body{
 	box-sizing: border-box;
 }
 @media all and (max-width: 768px){
-	.nav li{
-	display: inline-flex;
-	margin: 20px 20px 20px 20px;
-	padding: 0;
-	}
+
 	#formulario{
 	color: white;
 	font-size: 1rem;
@@ -130,33 +116,19 @@ body{
 	padding-top: 50px;
 	}
 }
-#containerGrid2{
-	display: grid;
-	grid-template-rows: 120px 120px auto 120px;
-	min-height: 100vh;
-}
 .containerFlex2{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
 }
-#containerGrid3{
-	display: grid;
-	grid-template-rows: 100px 70px auto 90px;
-	min-height: 100vh;
-}
+
 .containerFlex3{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	text-align: left;
 	line-height: 3rem;
-}
-#containerGrid4{
-	display: grid;
-	grid-template-rows: 120px  auto 500px ;
-	min-height: 100vh;
 }
 .containerGrid5 {
 	display: grid;
@@ -171,12 +143,7 @@ body{
 	display: inline-flex;
 	margin: -10px;
 }
-	.nav li{
-	display: inline-flex;
-	margin: 0px;
-	color: white;
-	font-size: 1rem;
-}
+
 #formulario{
 	color: white;
 	font-size: 1.5rem;
@@ -187,37 +154,4 @@ body{
 .containerGrid5{
 	font-size: 1rem;
 }
-}
-@keyframes animacion{
-	0%{
-		top: 0;
-	}
-	50%{
-		top: -20px;
-	}
-	100%{
-		top: 0;
-	}
-}
-@keyframes girando{
-	from{
-		transform: rotate(0);
-	}
-	to{
-		transform: rotate(360deg);
-	}
-}
-.Celu{
-	position: absolute;
-	width: 100px;
-	top: 200px;
-	right: 200px;
-}
-.Celu img{
-	position: absolute;
-	width: 100%;
-	animation-name: animacion, girando;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	animation-duration: 4s, 20s;
 }
