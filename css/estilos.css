@@ -12,13 +12,7 @@ body{
 	font-family: Roboto Condens, sans-serif;
 	background-image: url(../assets/fondo.png);
 }	
-.contenido{
-	color: white;
-	font-size: 30px;
-	font-weight: 300;
-	height: 50vh;
-	margin: 30px;
-}
+
 #titulo{
 	color: #fbe911b3;
 	font-size: 45px;
@@ -154,4 +148,12 @@ body{
 .containerGrid5{
 	font-size: 1rem;
 }
+}
+#texto{
+	background-color: white;
+	margin-bottom: 22rem;
+    background-color: #fff;
+    margin-top: 150px;
+    margin-right: 100px;
+    
 }
