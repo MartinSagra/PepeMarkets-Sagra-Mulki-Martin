@@ -12,7 +12,13 @@ body{
 	font-family: Roboto Condens, sans-serif;
 	background-image: url(../assets/fondo.png);
 }	
-
+.contenido{
+	color: white;
+	font-size: 30px;
+	font-weight: 300;
+	height: 50vh;
+	margin: 30px;
+}
 #titulo{
 	color: #fbe911b3;
 	font-size: 45px;
@@ -20,16 +26,6 @@ body{
 	text-align: center;
 }
 
-#footer {
-	background-color: black;
-	color: white;
-}
-.nav2 li{
-	display: inline-flex;
-	margin: 20px;
-	margin-right: 100px;
-	padding: 20px;
-}
 .whatsapp{
 	position: fixed;
 	bottom: 0;
@@ -133,10 +129,6 @@ body{
 	border-radius: 1rem;
 }
 @media all and (max-width: 760px) and (min-width: 320px){
-	.nav2 li{
-	display: inline-flex;
-	margin: -10px;
-}
 
 #formulario{
 	color: white;
@@ -149,11 +141,45 @@ body{
 	font-size: 1rem;
 }
 }
+.footer-basic {
+  padding:40px 0;
+  background-color:rgba(var(--bs-black-rgb),var(--bs-bg-opacity))!important;
+	--bs-bg-opacity:1;;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+  color: white;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+.mapa{
+    padding-top: 30px;
+    height: 60vh;
+    width: 100%;
+}
 #texto{
 	background-color: white;
 	margin-bottom: 22rem;
     background-color: #fff;
     margin-top: 150px;
     margin-right: 100px;
-    
+
 }
