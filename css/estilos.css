@@ -1,1 +1,245 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");*{margin:0;padding:0}body{background-repeat:no-repeat;background-size:cover;background-position:center;background-color:#222;font-size:1.5rem;font-family:Roboto Condens, sans-serif;background-image:url(../assets/fondo.png)}.contenido{color:white;font-size:30px;font-weight:300;height:50vh;margin:30px}#titulo{color:#fbe911b3;font-size:45px;font-weight:700;text-align:center}.whatsapp{position:fixed;bottom:0;right:0;display:block;height:auto;max-height:100%;overflow:hidden}#formulario{display:inline-flex;flex-direction:column;color:white;font-size:30px;font-weight:200;height:120vh;color:white;text-align:center;padding-top:30px}#titulo2{color:#fbe911b3;font-size:60px;font-weight:700;text-align:left;padding-top:20px;margin-bottom:10px;text-align:center}.contenido2{color:white;font-size:30px;font-weight:300;height:65vh;margin:0px}#titulo3{color:#fbe911b3;font-size:70px;font-weight:700;text-align:center}#containerGrid{display:grid;min-height:100vh}.containerFlex{display:flex;flex-wrap:wrap;width:100%;justify-self:center;padding:20px 0}.imagenes{display:inline-flex;width:40%;height:600px;margin-left:120px;padding-top:20px}.item{width:100%;padding:20px;box-sizing:border-box}@media all and (max-width: 768px){#formulario{color:white;font-size:1rem;line-height:1.5rem}.imagenes{display:inline-flex;width:45%;height:300px;margin-left:0;padding-top:50px}}.containerFlex2{display:flex;flex-wrap:wrap;width:100%;justify-content:center}.containerFlex3{display:flex;flex-direction:column;flex-wrap:nowrap;text-align:left;line-height:3rem}.containerGrid5{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr 1fr 1fr;background-color:#3a00ff85;color:white;border-radius:1rem}@media all and (max-width: 760px) and (min-width: 320px){#formulario{color:white;font-size:1.5rem;line-height:2.5rem}#titulo3{font-size:50px}.containerGrid5{font-size:1rem}}.footer-basic{padding:40px 0;background-color:rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;--bs-bg-opacity:1;color:#4b4c4d}.footer-basic .social{text-align:center;padding-bottom:25px}.footer-basic .social>a{font-size:24px;width:40px;height:40px;line-height:40px;display:inline-block;text-align:center;border-radius:50%;border:1px solid #ccc;margin:0 8px;color:inherit;opacity:0.75}.footer-basic .social>a :hover{opacity:0.9}.mapa{padding-top:30px;height:60vh;width:100%}#texto{background-color:white;margin-bottom:22rem;background-color:#fff;margin-top:150px;margin-right:100px;font-weight:300}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Akshar:wght@300&family=Josefin+Slab:wght@400&display&family=Roboto:wght@100;300;500&display=swap");
+*::selection {
+  color: #ffffff;
+  background: #9a8762;
+}
+
+body {
+  font-family: "Akshar", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.font-brand {
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
+
+.product-image {
+  height: 180px;
+  width: 180px;
+  padding-top: 10px;
+}
+
+#header {
+  z-index: 1000;
+}
+
+.card--mod {
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+.card--mod:hover {
+  transform: scale(1.05);
+  z-index: 99;
+}
+
+.btn-primary--mod {
+  background: #8a857b;
+  border-color: #95999f;
+  font-size: .9rem;
+}
+
+.btn-primary--mod:hover, .btn-primary--mod:focus {
+  background: #9a8762;
+  border-color: #b7b158;
+}
+
+.btn-primary--mod:focus {
+  box-shadow: 0 0 0 0.25rem rgba(77, 80, 83, 0.5);
+}
+
+.bg-gray {
+  background-color: #262626;
+}
+
+.bg-copyright {
+  background-color: #393939;
+}
+
+.bg-light-gray {
+  background-color: #ccc;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(to bottom, #ffffff, #cec3b1, #ae9d7e);
+}
+
+.bg-section-gold {
+  background: white;
+  background: linear-gradient(90deg, white 11%, rgba(199, 145, 16, 0.683911) 49%, white 89%);
+}
+
+#menu > li:hover {
+  background: #9a8762;
+}
+
+#menu li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.font-section {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+@media all and (min-width: 768px) {
+  .font-section {
+    font-size: 2.5rem;
+    padding-top: 30px;
+  }
+}
+
+.form-control--mod:focus {
+  border-color: #887145;
+  box-shadow: none;
+}
+
+.font-color-highlight {
+  color: #9a8762;
+}
+
+@media all and (max-width: 650px) {
+  div.card--mod {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  div.card--mod {
+    width: 100%;
+  }
+}
+
+.form-check-input--mod:checked {
+  background-color: #887145;
+  border-color: #b7b158;
+}
+
+.form-check-input--mod:focus {
+  box-shadow: none;
+  border-color: #95999f;
+}
+
+.information-card {
+  background: transparent;
+}
+
+.information-card img:hover {
+  transition: all .3s ease-in-out;
+  opacity: .5;
+}
+
+.information-card .card-body > span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #9a8762;
+}
+
+.information-card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.button-see-more {
+  position: relative;
+  padding: 0.4rem 2rem;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  color: white;
+  background-color: #aa9696ad;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.button-see-more::before, .button-see-more::after {
+  content: '';
+  position: absolute;
+  transition: inherit;
+  z-index: 1;
+}
+
+.button-see-more:hover {
+  color: white;
+  transition-delay: .5s;
+}
+
+.button-see-more:hover::before {
+  transition-delay: 0s;
+}
+
+.button-see-more:hover::after {
+  background: #9a8762;
+  transition-delay: .35s;
+}
+
+.button-see-more span {
+  z-index: 2;
+  position: relative;
+}
+
+textarea#form-message {
+  height: 250px;
+}
+
+.product-price {
+  color: #8a857b;
+  border: 2px solid #8a857b;
+  padding: inherit;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: block;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1300px) {
+  .carousel-item {
+    width: 80%;
+    padding-left: 350px;
+  }
+}
+
+.mapa {
+  padding-top: 30px;
+  height: 60vh;
+  width: 100%;
+}
+
+.card {
+  font-size: 1.5em;
+  overflow: hidden;
+  padding: 5;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  margin-top: 20px;
+  background-color: white;
+}
+
+#titulos {
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 8vh;
+  text-shadow: 0px 7px 3px rgba(18, 18, 18, 0.501);
+  text-transform: uppercase;
+  padding-top: 60px;
+}

@@ -1,0 +1,220 @@
+@mixin set-font( $ffamily, $fsize, $fweight:0){
+    font-family: $ffamily;
+    font-size: $fsize;
+    @if( $fweight != 0){
+        font-weight: $fweight;
+    }
+}
+*::selection{
+    color: $white-color;
+    background: $gold-color;
+}
+
+body{
+    @include set-font( ('Akshar', sans-serif), 1.3rem, 300);
+}
+
+.font-brand{
+    @include set-font( ('Courgette', cursive), 2rem);
+}
+
+.product-image{
+    height: 180px;
+	width: 180px;
+    padding-top: 10px;
+}
+
+#header{
+    z-index:1000;
+}
+.card--mod{
+    border-radius: 0;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.05);
+        z-index: 99;
+    }
+}
+
+.btn-primary--mod{
+    background: #8a857b;
+    border-color: $gray-color;
+    font-size: .9rem;
+    &:hover,&:focus{
+        background: $gold-color;
+        border-color: $light-yellow;        
+    }
+    &:focus{
+        box-shadow: 0 0 0 .25rem rgba(77, 80, 83, 0.5);
+    }
+}
+
+@each $colorName , $colorCode in $bgColorMap{
+    
+    .bg-#{$colorName}{
+        background-color: $colorCode;
+    }
+} 
+
+.bg-gold-gradient{
+    background: linear-gradient(to bottom, #ffffff, #cec3b1, #ae9d7e);
+}
+
+
+.bg-section-gold{
+    background: rgb(255,255,255);
+   background: linear-gradient(90deg, rgba(255,255,255,1) 11%, rgba(199,145,16,0.6839110644257703) 49%, rgba(255,255,255,1) 89%);
+}
+
+
+
+
+#menu > li:hover{
+    background: $gold-color;
+}
+
+#menu li a{
+    @include set-font( ('Roboto',sans-serif), 1.1rem, 300);
+}
+
+.font-section{
+    @include set-font( ('Roboto', sans-serif), 1.5rem, 100);
+    @media all and ( min-width: 768px ){
+        font-size: 2.5rem;
+        padding-top: 30px;
+    }
+}
+
+.form-control--mod:focus{
+    border-color: #887145;
+    box-shadow: none;
+}
+
+.font-color-highlight{
+    color: $gold-color;
+}
+
+div.card--mod{
+    @media all and (max-width: 650px){
+        width: 50%;
+    }
+    @media all and (max-width: 420px){
+        width: 100%;
+    }
+}
+
+.form-check-input--mod:checked{
+    background-color:#887145;
+    border-color: $light-yellow;
+}
+
+.form-check-input--mod:focus{
+    box-shadow: none;
+    border-color: $gray-color;
+}
+
+.information-card{
+    background: transparent;
+    img{
+        &:hover{
+            transition:all .3s ease-in-out ;
+            opacity: .5;
+        }
+    }
+    .card-body > span{
+        @include set-font( ('Roboto', sans-serif), 1.5rem, 300);
+        color: $gold-color;
+    }
+    p{
+        @include set-font( ('Roboto', sans-serif), 1.1rem, 300);
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+.button-see-more{
+    position: relative ; 
+    padding: 0.4rem 2rem;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    color: white;
+    background-color: #aa9696ad;
+    @include set-font( ('Roboto', sans-serif), 1.2rem, 300);
+    &::before, 
+    &::after {
+        content: '' ;
+        position: absolute ;	
+        transition: inherit ;
+        z-index: 1;    
+    }
+    &:hover {
+        color: white;
+        transition-delay: .5s;
+        &::before {
+            transition-delay: 0s;
+        }
+        &::after {
+            background: $gold-color;
+            transition-delay: .35s;
+        }
+    }
+}
+
+.button-see-more span {
+    z-index: 2;
+    position: relative;
+}
+
+
+textarea#form-message{
+    height: 250px;
+}
+.product-price{
+    color: #8a857b; 
+    border: 2px solid #8a857b;
+    padding: inherit;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+%wspp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: auto;
+    max-height: 100%;
+    overflow: hidden;
+}
+.whatsapp{
+    @extend %wspp;
+}
+@media screen and (max-width:1920px) and (min-width:1300px){
+    .carousel-item{
+        width:80%;
+        padding-left:350px;
+    }
+}
+.mapa{
+    padding-top: 30px;
+    height: 60vh;
+    width: 100%;
+}
+.card {
+    font-size: 1.5em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+    background-color:white;
+}
+#titulos{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 8vh;
+    text-shadow: 0px 7px 3px rgba(18, 18, 18, 0.501);
+    text-transform: uppercase;
+    padding-top: 60px;
+}
